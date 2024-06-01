@@ -9,10 +9,12 @@ import {
 const Footer = () => {
   return (
     <div className="w-full bg-[#212121]">
-      <footer className="max-w-screen-2xl items-start mx-auto flex justify-between px-6 py-24 text-white">
+      <footer className="max-w-screen-2xl items-center md:items-start mx-auto flex-col md:flex-row flex flex-wrap justify-between lg:gap-0 px-6 py-24 text-white">
 
-        <div>
-          <Logo />
+        <div className="order-1 w-1/2 lg:w-auto md:text-start text-center flex flex-col items-center md:items-start">
+          <div className="text-center lg:text-start">
+            <Logo />
+          </div>
           <div className="py-8">
             <h3 className="text-md font-light">2972 Westheimer Rd. Santa Ana,</h3>
             <h3 className="text-md font-light">Illinois 85486</h3>
@@ -24,7 +26,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-16">
+        <div className="lg:w-auto text-center md:text-start flex md:flex-row flex-col items-center gap-16 lg:pt-0 pt-8 px-0 lg:px-10 order-last lg:order-2">
           <div>
             <h2 className="text-xl font-semibold mb-8">PRODUCTS</h2>
             <ul className="flex flex-col gap-2">
@@ -44,7 +46,7 @@ const Footer = () => {
               <li className="text-sm font-normal hover:text-red-600 cursor-pointer">SAUCES</li>
             </ul>
           </div>
-          <div className="ml-16">
+          <div className="md:ml-16">
             <h2 className="text-xl font-semibold mb-8">QUICK LINKS</h2>
             <ul className="flex flex-col gap-2">
               <li className="text-sm font-normal hover:text-red-600 cursor-pointer">HOME</li>
@@ -55,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div>
+        <div className="lg:w-auto text-center md:text-start w-1/2 border-l-none md:border-l md:pl-8 pb-6 md:mt-0 mt-8 order-2 lg:order-last">
           <h2 className="text-xl font-semibold">OPENING HOURS</h2>
 
           <div className="flex flex-col py-8">
@@ -63,7 +65,7 @@ const Footer = () => {
             <p className="font-light text-md">Saturday: <span className="text-red-600">8am – 12am</span></p>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 justify-center md:justify-start">
             <div className="p-2 rounded-full border-gray-400 border">
               <FaFacebookF />
             </div>
@@ -79,8 +81,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="border-t border-gray-200">
-        <h3 className="text-white font-light text-center py-8">Copyright © 2023 <span className="text-red-600">Fazfood</span>. All rights reserved</h3>
+      <div className="border-t">
+        <h3 className="text-white font-light text-center py-6">Copyright © 2023 <span className="text-red-600">Fazfood</span>. All rights reserved</h3>
       </div>
     </div>
   );
