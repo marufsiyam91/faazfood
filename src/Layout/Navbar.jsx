@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isShowNav, setIsShowNav] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between px-4 md:px-12 h-[100px]">
+    <nav className="max-w-screen-4xl mx-auto flex items-center justify-between px-4 md:px-12 h-[100px]">
       <div className="flex lg:hidden text-3xl">
         <button onClick={() => setIsShowNav(true)}>
           <BiMenuAltLeft />
@@ -34,10 +34,10 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col lg:flex-row lg:items-center gap-6">
           <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
-            <NavLink>HOME</NavLink>
+            <NavLink to={'/'}>HOME</NavLink>
           </li>
           <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
-            <NavLink>SHOP</NavLink>
+            <NavLink to={'/shop'}>SHOP</NavLink>
           </li>
           <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
             <NavLink>ABOUT US</NavLink>
@@ -59,10 +59,10 @@ const Navbar = () => {
 
           <ul className="hidden lg:flex flex-1 lg:items-center gap-6">
               <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
-                <NavLink>HOME</NavLink>
+                <NavLink to={'/'}>HOME</NavLink>
               </li>
               <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
-                <NavLink>SHOP</NavLink>
+                <NavLink to={'/shop'}>SHOP</NavLink>
               </li>
               <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
                 <NavLink>ABOUT US</NavLink>
@@ -72,7 +72,7 @@ const Navbar = () => {
               </li>
           </ul>
 
-      <Logo />
+      <NavLink to={'/'}><Logo /></NavLink>
 
       <div className="flex items-center lg:flex-1 justify-end gap-4">
         <div className="hidden md:flex items-center text-sm gap-1 cursor-pointer hover:text-red-700">

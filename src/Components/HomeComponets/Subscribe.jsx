@@ -12,15 +12,15 @@ const Subscribe = () => {
         </div>
 
 
-        <div className="relative z-10 max-w-screen-xl mx-auto py-24">
+        <div className="relative z-10 max-w-screen-xl mx-auto py-24 px-4 md:px-8">
             <div className="max-w-[624px] relative mx-auto flex flex-col items-center text-center">
                 <img className="absolute -right-4 rotate-180 -top-6" src={'https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/ft_vector3.png'} alt="" />
                 <img className="absolute -left-4 bottom-6" src={'https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/ft_vector3.png'} alt="" />
-                <h1 className="text-6xl font-semibold text-slate-800">JOIN FOR HOT OFFERS</h1>
+                <h1 className="text-4xl lg:text-5xl 2xl:text-6xl font-semibold text-slate-800">JOIN FOR HOT OFFERS</h1>
                 <p className="text-slate-800 mt-8">If we go all out… We do it well! Subscribe to the newsletter <br /> to get the most exclusive promos.</p>
             </div>
             <div className="flex flex-col mt-12 max-w-[624px] mx-auto">
-                <div className="w-full flex justify-center gap-4">   
+                <div className="w-full flex flex-col esm:flex-row justify-center gap-4">   
                     <input className="p-4 rounded-xl w-full bg-white" type="text" placeholder="Email address"/>
                     <button className="flex items-center gap-2 p-4 bg-green-600 text-white rounded-xl">SUBSCRIBE <FaArrowRightLong /></button>
                 </div>
