@@ -57,10 +57,28 @@ const Blog = () => {
     ]
 
     return(
-        <div className='py-20'>
+        <div className='py-20 PX-6'>
             <p className='text-center text-red-600 text-lg text-medium mb-4'>WHAT'S UP BLOG</p>
             <h3 className='text-center text-gray-700 text-6xl font-bold mb-12'>FAZZFOOD & SAUCE NEWS</h3>
             <Swiper
+                    breakpoints={{
+                        220:{
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        640: {
+                          slidesPerView: 2,
+                          spaceBetween: 20,
+                        },
+                        1024: {
+                          slidesPerView: 3,
+                          spaceBetween: 30,
+                        },
+                        1280: {
+                          slidesPerView: 4,
+                          spaceBetween: 40,
+                        },
+                      }}
             modules={[ Autoplay]}
             spaceBetween={40}   
             slidesPerView={4}
