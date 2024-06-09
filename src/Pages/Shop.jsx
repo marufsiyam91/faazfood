@@ -12,7 +12,7 @@ const Shop = () => {
         </div>
 
         <div className="max-w-screen-2xl mx-auto flex py-20">
-            <div className="hidden lg:block w-[700px] border">
+            <div className="hidden lg:block w-[700px]">
                 <ShopCategory/>
             </div>
             <ShopMeals/>
