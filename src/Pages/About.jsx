@@ -1,8 +1,11 @@
+import PageTop from "../Components/PageTop"
 
 
 const About = () => {
   return (
-    <div>About</div>
+      <div>
+          <PageTop pageName={'ABOUT US'}/>
+    </div>
   )
 }
 
