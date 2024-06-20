@@ -40,10 +40,10 @@ const Navbar = () => {
             <NavLink to={'/shop'}>SHOP</NavLink>
           </li>
           <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
-            <NavLink>ABOUT US</NavLink>
+            <NavLink to={'/about'}>ABOUT US</NavLink>
           </li>
           <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
-            <NavLink>CONTACT</NavLink>
+            <NavLink to={'/contact'}>CONTACT</NavLink>
           </li>
         </ul>
       </div>
@@ -65,10 +65,10 @@ const Navbar = () => {
                 <NavLink to={'/shop'}>SHOP</NavLink>
               </li>
               <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
-                <NavLink>ABOUT US</NavLink>
+                <NavLink to={'/about'}>ABOUT US</NavLink>
               </li>
               <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
-                <NavLink>CONTACT</NavLink>
+                <NavLink to={'/contact'}>CONTACT</NavLink>
               </li>
           </ul>
 
