@@ -26,7 +26,8 @@ export default {
       },
     },
     fontFamily: {
-      primary: ["Oswald", "sans-serif"]
+      primary: ["Barlow Condensed", "sans-serif"],
+      cursive: ["Kaushan Script", "cursive"]
     }
   },
   plugins: [],
