@@ -6,7 +6,7 @@ import PageTop from "../Components/PageTop"
 
 const Contact = () => {
   return (
-      <div>
+      <div className="bg-[#F4F1EA]">
       <PageTop pageName={'CONTACT US'} />    
       <ContactInfo />
       <ContactForm/>

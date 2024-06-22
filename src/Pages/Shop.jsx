@@ -1,3 +1,4 @@
+import Subscribe from "../Components/HomeComponets/Subscribe"
 import PageTop from "../Components/PageTop"
 import ShopCategory from "../Components/ShopComponents/ShopCategory"
 import ShopMeals from "../Components/ShopComponents/ShopMeals"
@@ -14,7 +15,9 @@ const Shop = () => {
                 <ShopCategory/>
             </div>
             <ShopMeals/>
-        </div>
+      </div>
+      
+      <Subscribe/>
     </div>
   )
 }

@@ -12,6 +12,7 @@ export default {
         'md': '768px',
         'lmd': '880px',
         'lg': '1024px',
+        'pxl': '1200px',
         'xl': '1280px',
         '2xl': '1370px',
         '4xl': '1536px'
@@ -19,7 +20,10 @@ export default {
       backgroundImage: {
         'ChickenBackground': "url('https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/h2_bn-1.jpg')",
         'BurgerBackground': "url('https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/h2_bn-2.jpg')",
-      }
+      },
+      animation: {
+        'spin-slow': 'spin 13s linear infinite',
+      },
     },
     fontFamily: {
       primary: ["Oswald", "sans-serif"]
