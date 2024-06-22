@@ -22,7 +22,7 @@ const Navbar = () => {
           isShowNav
             ? "left-0 opacity-100"
             : "left-[-200%] opacity-0 "
-        } transition-all duration-500 fixed top-0 shadow-xl z-10  w-[370px] h-[100vh] bg-white pl-8 pt-16 lg:hidden block`}
+        } transition-all duration-500 fixed top-0 shadow-xl z-30  w-[370px] h-[100vh] bg-white pl-8 pt-16 lg:hidden block`}
       >
         <div className="absolute text-2xl top-6 right-6 block lg:hidden">
           <button onClick={() => setIsShowNav(false)}>
@@ -53,7 +53,7 @@ const Navbar = () => {
           isShowNav
             ? "bg-black bg-opacity-70 left-0 delay-0"
             : "left-[-200%] bg-opacity-30 delay-200"
-        } transition-all fixed block lg:hidden top-0 w-full h-[100vh] duration-600`}
+        } transition-all fixed z-20 block lg:hidden top-0 w-full h-[100vh] duration-600`}
       ></div>
 
 
