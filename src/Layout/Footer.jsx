@@ -16,12 +16,12 @@ const Footer = () => {
             <Logo />
           </div>
           <div className="py-8">
-            <h3 className="text-md font-light">2972 Westheimer Rd. Santa Ana,</h3>
-            <h3 className="text-md font-light">Illinois 85486</h3>
+            <h3 className="text-lg font-light">2972 Westheimer Rd. Santa Ana,</h3>
+            <h3 className="text-lg font-light">Illinois 85486</h3>
           </div>
 
           <div>
-            <h3 className="text-md font-light">support@example.com </h3>
+            <h3 className="text-lg font-light">support@example.com </h3>
             <h3 className="text-red-700">+(880) 456-0789</h3>
           </div>
         </div>
@@ -30,29 +30,29 @@ const Footer = () => {
           <div>
             <h2 className="text-xl font-semibold mb-8">PRODUCTS</h2>
             <ul className="flex flex-col gap-2">
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">BURGERS</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">KING DELIGHT PRODUCTS</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">CRISPY FLAVOURS</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">BREAKFAST PRODUCTS</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">BURGERS</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">KING DELIGHT PRODUCTS</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">CRISPY FLAVOURS</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">BREAKFAST PRODUCTS</li>
             </ul>
           </div>
 
           <div>
             <h2 className="text-xl font-semibold mb-8">MENUES</h2>
             <ul className="flex flex-col gap-2">
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">KIDS MENUES</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">DESSERTS</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">BEVERAGES</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">SAUCES</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">KIDS MENUES</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">DESSERTS</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">BEVERAGES</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">SAUCES</li>
             </ul>
           </div>
           <div className="md:ml-16">
             <h2 className="text-xl font-semibold mb-8">QUICK LINKS</h2>
             <ul className="flex flex-col gap-2">
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">HOME</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">SHOP</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">ABOUT US</li>
-              <li className="text-sm font-normal hover:text-red-600 cursor-pointer">CONTACTS</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">HOME</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">SHOP</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">ABOUT US</li>
+              <li className="text-md font-normal hover:text-red-600 cursor-pointer">CONTACTS</li>
             </ul>
           </div>
         </div>
@@ -61,8 +61,8 @@ const Footer = () => {
           <h2 className="text-xl font-semibold">OPENING HOURS</h2>
 
           <div className="flex flex-col py-8">
-            <p className="font-light text-md">Monday – Friday: <span className="text-red-600">8am – 4pm</span></p>
-            <p className="font-light text-md">Saturday: <span className="text-red-600">8am – 12am</span></p>
+            <p className="font-light text-lg">Monday – Friday: <span className="text-red-600">8am – 4pm</span></p>
+            <p className="font-light text-lg">Saturday: <span className="text-red-600">8am – 12am</span></p>
           </div>
 
           <div className="flex gap-2 justify-center md:justify-start">
@@ -82,7 +82,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="border-t">
-        <h3 className="text-white font-light text-center py-6">Copyright © 2023 <span className="text-red-600">Fazfood</span>. All rights reserved</h3>
+        <h3 className="text-white font-light text-center py-6 text-lg font-normal">Copyright © 2023 <span className="text-red-600">Fazfood</span>. All rights reserved</h3>
       </div>
     </div>
   );
