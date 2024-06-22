@@ -58,8 +58,8 @@ const Blog = () => {
 
     return(
         <div className='py-20 PX-6'>
-            <p className='text-center text-red-600 text-lg text-medium mb-4'>WHAT'S UP BLOG</p>
-            <h3 className='text-center text-gray-700 text-6xl font-bold mb-12'>FAZZFOOD & SAUCE NEWS</h3>
+            <p className='text-center text-red-700 text-xl font-bold mb-4'>WHAT'S UP BLOG</p>
+            <h3 className='text-center text-gray-700 text-5xl sm:text-6xl lg:text-7xl font-bold mb-12'>FAZZFOOD & SAUCE NEWS</h3>
             <Swiper
                     breakpoints={{
                         220:{
@@ -92,11 +92,11 @@ const Blog = () => {
                                 <img src={blog.image} alt="" />
                             </div>
                             <div className='flex gap-4 py-2 mt-2'>
-                                <p className='text-sm font-medium text-red-700'>{blog.type}</p>
-                                <p className='text-sm font-medium text-slate-400'>{blog.date}</p>
+                                <p className='text-md font-medium text-red-700'>{blog.type}</p>
+                                <p className='text-md font-medium text-slate-400'>{blog.date}</p>
                             </div>
                             <h2 className='text-3xl font-semibold mb-4'>{blog.title}</h2>
-                            <p className=''>{blog.description}</p>
+                            <p className='text-lg leading-6 text-stone-500'>{blog.description}</p>
                         </SwiperSlide>
                     ))
                 }

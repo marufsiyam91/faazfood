@@ -9,11 +9,11 @@ const AboutFood = () => {
         <span className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-orange-700 text-[4rem]"><IoFastFoodOutline/></span>
       </div>
       <div className="relative z-10 max-w-screen-xl mx-auto text-center py-20 flex flex-col items-center px-4">
-        <p className="text-lg text-red-600 font-medium">ABOUT OUR FOOD</p>
-        <h2 className="my-6 text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-[3.2rem] lg:leading-[4.5rem] font-bold max-w-[650px] text-stone-800">
+        <p className="text-xl text-red-600 font-bold">ABOUT OUR FOOD</p>
+        <h2 className="my-6 text-3xl md:text-4xl lg:text-5xl xl:text-7xl leading-[3.2rem] lg:leading-[4.5rem] font-bold max-w-[600px] text-stone-800">
           BEST BURGER IDEAS & TRADITIONS FROM THE WHOLE WORLD
         </h2>
-        <p className="text-lg font-light text-stone-400 max-w-[540px]">
+        <p className="text-lg font-normal text-stone-700 max-w-[520px]">
           The mouth-watering aroma of sizzling burgers now fills the streets of
           Birmingham thanks to the passionate pursuit of three brothers, the
           British founders of Faz food. After over 50 years of experience in the

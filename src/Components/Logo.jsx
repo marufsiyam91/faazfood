@@ -6,7 +6,7 @@ const Logo = () => {
     <span className="text-4xl text-orange-600">
         <IoFastFoodOutline/>
     </span>
-    <h2 className="text-3xl font-bold text-slate-700"><span className="text-red-700">FAAZ</span>FOOD</h2>
+    <h2 className="text-4xl font-bold text-slate-700"><span className="text-red-700">FAAZ</span>FOOD</h2>
 </div>
   )
 }

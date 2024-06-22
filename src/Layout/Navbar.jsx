@@ -33,16 +33,16 @@ const Navbar = () => {
           <Logo />
         </div>
         <ul className="flex flex-col lg:flex-row lg:items-center gap-6">
-          <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
+          <li className="text-lg font-semibold text-slate-600 hover:text-red-700 transition duration-300">
             <NavLink to={'/'}>HOME</NavLink>
           </li>
-          <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
+          <li className="text-lg font-semibold text-slate-600 hover:text-red-700 transition duration-300">
             <NavLink to={'/shop'}>SHOP</NavLink>
           </li>
-          <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
+          <li className="text-lg font-semibold text-slate-600 hover:text-red-700 transition duration-300">
             <NavLink to={'/about'}>ABOUT US</NavLink>
           </li>
-          <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
+          <li className="text-lg font-semibold text-slate-600 hover:text-red-700 transition duration-300">
             <NavLink to={'/contact'}>CONTACT</NavLink>
           </li>
         </ul>
@@ -58,16 +58,16 @@ const Navbar = () => {
 
 
           <ul className="hidden lg:flex flex-1 lg:items-center gap-6">
-              <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
+              <li className="text-lg font-semibold text-slate-600 hover:text-red-700 transition duration-300">
                 <NavLink to={'/'}>HOME</NavLink>
               </li>
-              <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
+              <li className="text-lg font-semibold text-slate-600 hover:text-red-700 transition duration-300">
                 <NavLink to={'/shop'}>SHOP</NavLink>
               </li>
-              <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
+              <li className="text-lg font-semibold text-slate-600 hover:text-red-700 transition duration-300">
                 <NavLink to={'/about'}>ABOUT US</NavLink>
               </li>
-              <li className="text-md font-semibold text-slate-600 hover:text-red-700 transition duration-300">
+              <li className="text-lg font-semibold text-slate-600 hover:text-red-700 transition duration-300">
                 <NavLink to={'/contact'}>CONTACT</NavLink>
               </li>
           </ul>
@@ -75,13 +75,13 @@ const Navbar = () => {
       <NavLink to={'/'}><Logo /></NavLink>
 
       <div className="flex items-center lg:flex-1 justify-end gap-4">
-        <div className="hidden md:flex items-center text-sm gap-1 cursor-pointer hover:text-red-700">
+        <div className="hidden md:flex items-center text-md gap-1 cursor-pointer hover:text-red-700">
           <span className="text-xl">
             <IoIosSearch />
           </span>{" "}
           Search
         </div>
-        <button className="relative hidden md:flex items-center overflow-hidden  p-4 bg-red-700 rounded-xl text-white ml-4 group/btn">
+        <button className="text-md font-medium relative hidden md:flex items-center overflow-hidden  p-4 bg-red-700 rounded-xl text-white ml-4 group/btn">
           <div className="absolute w-full h-full bg-green-700 top-0 -left-[100%] transition-all duration-300 group-hover/btn:left-0"></div>
           <div className="flex items-center gap-2 relative">
           <span className="text-2xl">
