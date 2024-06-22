@@ -81,11 +81,14 @@ const Navbar = () => {
           </span>{" "}
           Search
         </div>
-        <button className="hidden md:flex items-center gap-2 p-4 bg-red-700 rounded-xl text-white ml-4">
+        <button className="relative hidden md:flex items-center overflow-hidden  p-4 bg-red-700 rounded-xl text-white ml-4 group/btn">
+          <div className="absolute w-full h-full bg-green-700 top-0 -left-[100%] transition-all duration-300 group-hover/btn:left-0"></div>
+          <div className="flex items-center gap-2 relative">
           <span className="text-2xl">
             <MdDeliveryDining />
           </span>{" "}
           ORDER NOW
+          </div>
         </button>
         <button className="p-4 bg-green-700 text-white rounded-xl text-xl">
           <FaCartShopping />
