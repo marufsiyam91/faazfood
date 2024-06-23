@@ -4,6 +4,7 @@ import NewTest from "../Components/AboutComponents/NewTest/NewTest"
 import Subscribe from "../Components/Subscribe"
 import PageTop from "../Components/PageTop"
 import AboutGallary from "../Components/AboutComponents/AboutGallary"
+import ExpertChef from "../Components/ExpertChef/ExpertChef"
 
 
 const About = () => {
@@ -13,7 +14,8 @@ const About = () => {
       <AboutFood />
       <AboutGallary/>
       <FoodPromiseCard />
-      <NewTest/>
+      <NewTest />
+      <ExpertChef/>
       <Subscribe/>
     </div>
   )
