@@ -1,3 +1,4 @@
+import ExpertChef from "../Components/ExpertChef/ExpertChef";
 import Blog from "../Components/HomeComponets/Blog";
 import HeroSection from "../Components/HomeComponets/HeroSection";
 import MealCard from "../Components/HomeComponets/MealCard";
@@ -10,7 +11,8 @@ const Home = () => {
     <div className="bg-[#F4F1EA]">
         <HeroSection/>
         <ChooseFaaz/>
-        <MealCard/>
+      <MealCard />
+      <ExpertChef/>
         <Blog/>
         <Subscribe/>
     </div>
