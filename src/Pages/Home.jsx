@@ -1,7 +1,7 @@
 import Blog from "../Components/HomeComponets/Blog";
 import HeroSection from "../Components/HomeComponets/HeroSection";
 import MealCard from "../Components/HomeComponets/MealCard";
-import Subscribe from "../Components/HomeComponets/Subscribe"
+import Subscribe from "../Components/Subscribe"
 import ChooseFaaz from './../Components/HomeComponets/ChooseFaazFood/ChooseFaaz';
 
 

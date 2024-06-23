@@ -1,4 +1,4 @@
-import Subscribe from "../Components/HomeComponets/Subscribe"
+import Subscribe from "../Components/Subscribe"
 import PageTop from "../Components/PageTop"
 import ShopCategory from "../Components/ShopComponents/ShopCategory"
 import ShopMeals from "../Components/ShopComponents/ShopMeals"

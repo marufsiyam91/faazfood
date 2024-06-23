@@ -1,6 +1,6 @@
 import ContactForm from "../Components/ContactComponents/ContactForm"
 import ContactInfo from "../Components/ContactComponents/ContactInfo"
-import Subscribe from "../Components/HomeComponets/Subscribe"
+import Subscribe from "../Components/Subscribe"
 import PageTop from "../Components/PageTop"
 
 
