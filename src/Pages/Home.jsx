@@ -11,8 +11,8 @@ const Home = () => {
     <div className="bg-[#F4F1EA]">
         <HeroSection/>
         <ChooseFaaz/>
-      <MealCard />
-      <ExpertChef/>
+        <MealCard />
+        <ExpertChef/>
         <Blog/>
         <Subscribe/>
     </div>
