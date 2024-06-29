@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import Shop from "../Pages/Shop";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
+import SingleFood from "../Pages/SingleFood";
 
 export const Router = createBrowserRouter([
     {
@@ -25,7 +26,12 @@ export const Router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact />
-            }
+            },
+            {
+                path: '/shop/:id',
+                element: <SingleFood />,
+                loader: ({params}) => fetch(`http://localhost:8800/api/v1/foods/${params.id}`)
+            } 
         ]
     },
     {

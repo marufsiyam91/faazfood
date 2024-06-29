@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import { FaCartShopping, FaStar } from "react-icons/fa6";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 const ShopMeals = () => {
   const meals = [
@@ -60,10 +62,33 @@ const ShopMeals = () => {
         "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_5-600x600.png",
     },
   ];
+
+  const [allMeals, setAllMeals] = useState([])
+
+  useEffect(() => {
+    const fetchMeals = async () => {
+      try {
+        const response = await fetch('http://localhost:8800/api/v1/foods');
+        const data = await response.json();
+        setAllMeals(data.data); 
+        console.log(data.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+  
+    fetchMeals();
+  }, []); 
+  
+  
+
+
   return (
     <div className="grid esm:grid-cols-2 lmd:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 px-4">
-      {meals.length > 0 &&
-        meals.map((meal) => (
+      {
+        allMeals.map((meal) => (
+          <>
+            <NavLink to={`/shop/${meal.id}`}>
           <div className="relative  p-6 rounded-2xl group" key={meal.id}>
             <div className="relative z-10 flex flex-col justify-between h-full">
               <div>
@@ -107,7 +132,9 @@ const ShopMeals = () => {
             </div>
 
             <div className="absolute w-full h-[70%] group-hover:h-[100%] transition-all duration-500 bottom-0 left-0 bg-white rounded-2xl"></div>
-          </div>
+              </div>
+              </NavLink>
+            </>
         ))}
     </div>
   );
