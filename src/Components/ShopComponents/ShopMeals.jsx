@@ -171,10 +171,10 @@ const ShopMeals = () => {
   return (
     <div className="grid esm:grid-cols-2 lmd:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 px-4">
       {
-        allMeals.map((meal) => (
+        meals.map((meal) => (
           <>
-            <NavLink to={`/shop/${meal.id}`}>
-          <div className="relative  p-6 rounded-2xl group" key={meal.id}>
+            <NavLink className="relative  p-6 rounded-2xl group" to={`/shop/${meal.id}`} key={meal.id}>
+
             <div className="relative z-10 flex flex-col justify-between h-full">
               <div>
                 <img src={meal.image} alt="" />
@@ -217,7 +217,6 @@ const ShopMeals = () => {
             </div>
 
             <div className="absolute w-full h-[70%] group-hover:h-[100%] transition-all duration-500 bottom-0 left-0 bg-white rounded-2xl"></div>
-              </div>
               </NavLink>
             </>
         ))}
