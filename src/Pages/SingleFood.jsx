@@ -12,7 +12,7 @@ const SingleFood = () => {
   return (
     <div className="bg-[#F4F1EA]">
       <PageTop pageName={title} />
-      <MealDetail description={description} image={image} category={category} price={price} rating={rating} />
+      <MealDetail title={title} description={description} image={image} category={category} price={price} rating={rating} />
       
       <Subscribe/>
     </div>
