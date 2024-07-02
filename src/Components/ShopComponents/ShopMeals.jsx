@@ -155,7 +155,7 @@ const ShopMeals = () => {
         const response = await fetch('http://localhost:8800/api/v1/foods');
         const data = await response.json();
         // setAllMeals(data.data); 
-        setAllMeals(meals)
+        setAllMeals(data.data)
         console.log(data.data);
       } catch (error) {
         console.error(error);
@@ -173,7 +173,7 @@ const ShopMeals = () => {
       {
         meals.map((meal) => (
           <>
-            <NavLink className="relative  p-6 rounded-2xl group" to={`/shop/${meal.id}`} key={meal.id}>
+            <NavLink className="relative  p-6 rounded-2xl group" to={`/shop/${meal._id}`} key={meal._id}>
 
             <div className="relative z-10 flex flex-col justify-between h-full">
               <div>

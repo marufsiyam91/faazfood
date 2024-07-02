@@ -1,7 +1,7 @@
 import Subscribe from "../Components/Subscribe"
 import PageTop from "../Components/PageTop"
-import ShopCategory from "../Components/ShopComponents/ShopCategory"
 import ShopMeals from "../Components/ShopComponents/ShopMeals"
+import ShopSidebar from "../Components/ShopComponents/ShopSidebar"
 
 
 const Shop = () => {
@@ -10,9 +10,9 @@ const Shop = () => {
 
       <PageTop pageName={'SHOP'}/>
 
-        <div className="max-w-screen-2xl mx-auto flex py-20">
-            <div className="hidden lg:block w-[700px]">
-                <ShopCategory/>
+        <div className="max-w-screen-2xl mx-auto flex py-20 ">
+            <div className="hidden lg:block min-w-[350px] ">
+                <ShopSidebar/>
             </div>
             <ShopMeals/>
       </div>
