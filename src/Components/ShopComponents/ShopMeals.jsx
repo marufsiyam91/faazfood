@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { FaCartShopping, FaStar } from "react-icons/fa6";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { NavLink } from "react-router-dom";
+import FilteerSort from "./Filteer&Sort";
 
-const ShopMeals = () => {
+const ShopMeals = ({handleSidebarShow}) => {
   const meals = [
     {
       "id": 1,
@@ -42,6 +43,7 @@ const ShopMeals = () => {
       "price": 5.4,
       "category": "Chicken",
       "rating": 4.3,
+      "bestSeller": true,
       "image":
         "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_24-600x600.png"
     },
@@ -72,6 +74,7 @@ const ShopMeals = () => {
       "price": 3.39,
       "category": "Burger",
       "rating": 4.6,
+      "bestSeller": true,
       "image":
         "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_5-600x600.png"
     },
@@ -92,6 +95,7 @@ const ShopMeals = () => {
       "price": 12.46,
       "category": "Sandwich",
       "rating": 4.2,
+      "bestSeller": true,
       "image":
         "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_17-600x600.png"
     },
@@ -122,6 +126,7 @@ const ShopMeals = () => {
       "price": 5.99,
       "category": "Beef",
       "rating": 4.9,
+      "bestSeller": true,
       "image":
         "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_1-600x600.png"
     },
@@ -169,6 +174,8 @@ const ShopMeals = () => {
 
 
   return (
+    <>
+      <FilteerSort handleSidebarShow={handleSidebarShow}/>
     <div className="grid esm:grid-cols-2 lmd:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 px-4">
       {
         meals.map((meal) => (
@@ -221,6 +228,7 @@ const ShopMeals = () => {
             </>
         ))}
     </div>
+    </>
   );
 };
 
